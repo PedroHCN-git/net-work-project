@@ -37,6 +37,10 @@ body {
     cursor: pointer;
 }
 
+.menu li button:hover{
+    background-color: #1dc296;
+}
+
 .logo {
     margin-left: 2%;
     height: 120px;
@@ -52,6 +56,7 @@ body {
 }
 
 .login-container {
+    box-shadow: 2px 2px 30px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -89,7 +94,7 @@ body {
 }
 
 .login button {
-    margin: 10px;
+    margin: 20px;
     width: 160px;
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
@@ -99,6 +104,10 @@ body {
     padding: 15px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #117359;
 }
 
 .login-container header {
