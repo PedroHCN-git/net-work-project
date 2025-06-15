@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222222;
+    font-size: 16px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #169976;
+}
+
+.menu {
+    margin-right: 2%;
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 10px;
+}
+
+.menu li button {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: #000000;
+    background-color: #1DCD9F;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logo {
+    margin-left: 2%;
+    height: 120px;
+    width: 120px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #169976;
+    border-radius: 5px;
+    padding: 25px;
+    height: 500px;
+    width: 500px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.login-form input {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222222;
+    width: 450px;
+    height: 25px;
+}
+
+.login button {
+    margin: 10px;
+    width: 160px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    color: #000000;
+    background-color: #169976;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container header {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.login-container .logo {
+    height: 180px;
+    width: 180px;
+}
+
+.login-container h3{
+    padding-left: 10px;
+    border-left: solid 4px #000000;
+}
