@@ -30,14 +30,18 @@
                 <h3>YOUR CONTACTS<br>SOCIAL NETWORK</h3>
             </header>
             <form name="login" class="login-layout" id="form-layout" action="/login">
-                <label for="userNameOrEmail" data-label="userNameOrEmail">Type your user name or e-mail</label>
-                <input name="userNameOrEmail" class="userNameOrEmail" type="text" required>
-                <label for="pswd" data-label="pswd">Type your password</label>
-                <input name="pswd" class="pswd" type="password" required>
+                <label for="name">Type your name</label>
+                <input type="text" name="name" required>
+                <label for="email">Type your email</label>
+                <input type="email" name="email" required>
+                <label for="pswd">Type your password</label>
+                <input type="password" name="pswd" required>
+                <label for="confpwsd">Confirm your password</label>
+                <input type="password" name="confpwsd" required>
             </form>
         </div>
         <button id="submit" form="login-form">Enter</button>
     </section>
-    <script src="../static/scripts/login.js"></script>
+    <script src="../static/scripts/register.js"></script>
 </body>
 </html>

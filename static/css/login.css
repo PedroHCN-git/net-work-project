@@ -66,22 +66,23 @@ body {
     border-radius: 15px;
     padding: 25px;
     height: 500px;
+    min-height: fit-content;
     width: 500px;
 }
 
-.login-form {
+#form-layout {
     display: flex;
     flex-direction: column;
 }
 
-.login-form label {
+#form-layout label {
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
     margin-top: 30px;
     margin-bottom: 10px;
 }
 
-.login-form input {
+#form-layout input {
     font-size: 1.2rem;
     font-family: "Roboto", sans-serif;
     color: #000000;
