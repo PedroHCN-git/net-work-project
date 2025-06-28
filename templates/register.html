@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>net work</title>
-    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="../static/css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
             <img src="../static/images/network.png" alt="" class="logo" height="30px" width="30px">
             <ul class="menu">
                 <li>
-                    <button data-register>Register</button>
+                    <button data-register><a href="/login">Login</a></button>
                 </li>
                 <li>
                     <button data-question>Question</button>
@@ -23,24 +23,48 @@
             </ul>
         </nav>
     </section>
-    <section class="login">
-        <div class="login-container">
+    <section class="register">
+        <div class="register-container">
             <header>
                 <img src="../static/images/network.png" class="logo" alt="">
                 <h3>YOUR CONTACTS<br>SOCIAL NETWORK</h3>
             </header>
-            <form name="login" class="login-layout" id="form-layout" action="/login">
+            <form name="register" class="register-layout" id="register-layout" action="/register">
                 <label for="name">Type your name</label>
-                <input type="text" name="name" required>
+                <input type="text" name="name" class="name" required>
+                <div class="warnings" data-warning="name">
+                    <ul class="warnings_list">
+                        <li class="rule rule-name">Invalid name, names cant contain especial characters</li>
+                    </ul>
+                </div>
                 <label for="email">Type your email</label>
-                <input type="email" name="email" required>
+                <input type="email" name="email" class="email" required>
+                <div class="warnings" data-warning="email">
+                    <ul class="warnings_list">
+                        <li class="rule e-mail">Invalid e-mail</li>
+                    </ul>
+                </div>
                 <label for="pswd">Type your password</label>
-                <input type="password" name="pswd" required>
+                <input type="password" name="pswd" class="pswd" required>
+                <div class="warnings" data-warning="pswd">
+                    <span>Your password needs:</span>
+                    <ul class="warnings_list">
+                        <li class="rule min-len">minimun of eigth characters</li>
+                        <li class="rule upper-case">minimun one uppercase character</li>
+                        <li class="rule especial-char">minimun one special character</li>
+                        <li class="rule min-number">minumun one number</li>
+                    </ul>
+                </div>
                 <label for="confpwsd">Confirm your password</label>
-                <input type="password" name="confpwsd" required>
+                <input type="password" name="confpswd" class="confpswd" required>
+                <div class="warnings" data-warning="confpswd">
+                    <ul class="warnings_list">
+                        <li class="rule pswd-match">Passwords do not match</li>
+                    </ul>
+                </div>
             </form>
         </div>
-        <button id="submit" form="login-form">Enter</button>
+        <button id="submit" form="register-form">Enter</button>
     </section>
     <script src="../static/scripts/register.js"></script>
 </body>

@@ -21,7 +21,12 @@ def register():
         user_name = request.form.get('name')
         email = request.form.get('email')
         password = request.form.get('password')
-        register_user()
+        register_user(user_name, email, password)
+
+
+@app.route('/home')
+def home():
+    return render_template('home.html')
 
 
 def user_auth(user_name_email: str, user_password: str):

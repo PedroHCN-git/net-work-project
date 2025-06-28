@@ -1,3 +1,1 @@
-const registerEndpoint = ''
-
-const registerPage = fetch()
+const registerEndpoint = '127.0.0.1:500/register'
